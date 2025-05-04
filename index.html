@@ -2,43 +2,53 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Accueil - Mon Portfolio</title>
+  <meta name="viewport" content="width=dsv, initial-scale=1.0">
+  <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<script>
-  function changeTheme() {
-    const body = document.body;
-    body.classList.toggle('dark-theme');
-  }
-  </script>
-  
 <body>
-
-<canvas id="backgroundCanvas"></canvas>
-
-<nav>
-  <div class="logo">DEVELOPEUR</div>
-  <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <button id="theme-toggle">🎨 Thème</button>
-  <button id="music-toggle">🎵 Musique</button>
-</nav>
-
-<section class="hero">
-  <h1>Bienvenue sur mon Portfolio !</h1>
-  <p>Mezui Jeff Junior</p>
-  <p>Développeur Web - HTML | CSS | Python</p>
-</section>
-
-<footer>
-  <p>&copy; 2025 - Jeffrey Mezui</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <header>
+      <nav id="menu">
+        <div class="nav-left">
+          <button id="theme-toggle">🌖 Changer de thème</button>
+        </div>
+        <div class="nav-right">
+          <a href="index.html">Accueil</a>
+          <a href="Services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header> 
+  <section>
+    <h1>👉 🧑‍💻About me</H1> 
+    <p>Je m'appelle Mezui Jeff Junior, étudiant passionné par le développement web. Actuellement apprenti développeur, je me forme activement aux technologies du web pour bâtir des projets concrets et évoluer dans ce domaine qui me passionne.
+      Je maîtrise le HTML et le CSS, ce qui me permet de créer des pages web structurées et visuellement attractives. Je me lance également dans l’apprentissage du JavaScript, afin de rendre mes projets plus dynamiques et interactifs.
+      Titulaire d’un certificat en anglais, je peux aussi évoluer dans des environnements internationaux et suivre des ressources techniques en langue anglaise sans difficulté.
+      Toujours curieux et motivé, je cherche constamment à progresser, apprendre de nouvelles compétences et relever de nouveaux défis.</p></section>
+    
+    <section>
+      <H2><a href="Services.html">💼Services</a></H2>
+      <p>
+        Je propose des services de création de sites web modernes et optimisés. Que ce soit pour un portfolio, un site vitrine ou une petite boutique en ligne, je vous accompagne de la conception à la mise en ligne.
+       <br> 🔧 Intégration HTML/CSS,
+        <br>🎨 Personnalisation graphique,
+       <br> 📱 Optimisation mobile.
+      </p>
+    </section>
+    <section>
+      <h2><a href="contact.html">📬contact</a></h2>
+      
+      <p>Une question, un projet, une collaboration ?
+       <br> N’hésitez pas à me contacter via le formulaire ou par e-mail.
+       <br> Je réponds rapidement à toutes les demandes.
+        </p>
+    </section>
+  
+  </nav>
+  <footer>
+  <P id="final">2025-Mezui Jeff</P>
+  </footer>
+  
+  <script src="script.js"></script> 
 </body>
 </html>

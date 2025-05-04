@@ -2,37 +2,43 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact - Mon Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("aVsqpt.1espEUJg-Lm");
+  })();
+</script>
+<h1>Contact Mezui Jeff Junior</h1>
+<p>Email: <strong>Mezuijeffrey2@gmail.com</strong></p>
+<header>
+  <nav id="menu">
+    <div class="nav-left">
+      <button id="theme-toggle">🌖 Changer de thème</button>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Accueil</a>
+      <a href="Services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
 
-<canvas id="backgroundCanvas"></canvas>
-
-<nav>
-  <div class="logo">DEVELOPER</div>
-  <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="Services.html">Services</a></li>
-    <li><a href="Portfolio.html">Portfolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <button id="theme-toggle">🎨 Thème</button>
-  <button id="music-toggle">🎵 Musique</button>
-</nav>
-
-<section class="contact-page">
-  <h1>Contactez-moi</h1>
-  <p>Email : <a href="mailto:mezuijeffrey2@gmail.com">mezuijeffrey2@gmail.com</a></p>
-  <p>Téléphone : <a href="tel:0751593404">0751593404</a></p>
-</section>
-
-<footer>
-  <p>&copy; 2025 - Jeffrey Mezui</p>
-</footer>
-
-<script src="script.js"></script>
-
+ 
+  <script src="script.js"></script> 
+    <form id="contact-from" onsubmit="sendEmail(event)">
+    <label>Name</label>
+    <input type="Name" name="user_name" required>
+    <label>Email</label>
+    <input type="email" name="user_email" required>
+    <label>Message</label>
+    <textarea name="Message" rows="5"></textarea>
+    <button type="submit">Envoyer votre message</button>
+  
+</form>
 </body>
 </html>
