@@ -1,0 +1,126 @@
+
+:root{
+  --bg-color:rgb(19, 194, 194) ;
+  --text-color:yellow;
+}
+bodY.dark{
+  --bg-color:purple;
+  --text-color:pink;
+}
+.watch{
+ width: 50%;
+ height: 300px;
+ position: relative;
+ left: 50%;
+}
+#theme-toggle{
+  position: relative;
+  top: auto;
+  background-color: #0f0f0f;
+}
+body{
+  background: linear-gradient(135deg, #0f0f0f,#1a1a1a);
+  background-color:var(--bg-color);
+  color:var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 2,5rem;
+  line-height: 1,6;
+  transition:all 0.3s ease;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+p{
+  font-size: 1,5rem;
+}
+section{
+  border-left: 4px solid #00ffcc;
+  font-size: 2,5rem;
+  margin-bottom: 2,5rem;
+  padding: 1rem;
+}
+h1{
+  font-size: 2,5rem;
+  margin-bottom: 2rem;
+}
+h2{
+  font-size: 1,5rem;
+}
+#space{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#final{
+  text-align: center;
+  background-color: purple;
+  padding: 20px 20px 20px 20px;
+  border: 4px solid;
+}
+form{
+  margin-top: 2Opx;
+  text-align: center;
+}
+input,textarea{
+  width: 100px;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+button{
+  padding: 10px 20px;
+  background-color: palevioletred;
+  color: azure;
+  border: none;
+  cursor: pointer;
+}
+.formulaire{
+text-align: center;
+font-size: large;
+font-weight: 100;
+position: relative;
+top: auto;
+}
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:purple;
+  padding: 10px 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-left button {
+  background-color: #08c3ff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.nav-right a:hover {
+  color: #fffa7c;
+}
+
+body {
+  padding-top: 70px;
+}
+.card{
+  border-radius:15px;
+  background-color: purple;
+  text-align: center;
+}
